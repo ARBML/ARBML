@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri&display=swap");
+
+#maincontainer::before {
+  background-image: url("arabic-letters-full.png");
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.05;
+}
+#maincontainer {
+  padding: 1rem !important;
+  min-width: 65% !important;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 4px 9px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 4px 9px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 4px 9px -2px rgba(0, 0, 0, 0.75);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+  font-family: "Amiri", serif;
+}
+
+#avatar {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.info {
+  margin-bottom: 75px;
+}
+
+.info p {
+  font-size: 1.75rem;
+}
+
+.info h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.inputs h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.inputs input {
+  line-height: 2.5em;
+}
+
+.outputs h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.outputs div {
+  height: 20rem;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.output-text {
+  white-space: pre;
+  font-size: 1.5rem;
+}
+
+/* loader */
+
+#loader {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin-left: 48%;
+  margin-right: 52%;
+}
+.lds-grid div {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #ccc;
+  animation: lds-grid 1.2s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lds-grid div:nth-child(1) {
+  top: 6px;
+  left: 6px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 6px;
+  left: 26px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 6px;
+  left: 45px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 26px;
+  left: 6px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 26px;
+  left: 26px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 26px;
+  left: 45px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 45px;
+  left: 6px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 45px;
+  left: 26px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 45px;
+  left: 45px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
