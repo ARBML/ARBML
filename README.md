@@ -9,15 +9,15 @@ Make sure you check the [issues](https://github.com/zaidalyafeai/ARBML/issues) t
 
 ### Models
 Create and train models using TensorFlow, Pytorch, etc ... 
-- Letters and digits recognition (**In progress**)
-- Diactrization (تشكيل) (**In progress**)
-- Poem Generation (**In progress**)
-- Translation (**In progress**) 
+- Letters and digits recognition (**Done**)
+- Diactrization (تشكيل) (**Done**)
+- Poem Generation (**Done**)
+- Translation (**Done**) 
+- Word Embedding (**Done**) 
 - Sentiment Analysis 
 - Text Auto-Complete 
 - Manuscript Reader  
-- Text classification (اسم , فعل ، حرف)
-- Word Embedding and cloud
+- Text Part Classification (اسم , فعل ، حرف)
 
 ### Interfaces
 Make the models accessible through 
