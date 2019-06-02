@@ -51,8 +51,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
 
    <tr>
     <td class="tg-yw4l">Arabic Poem Generation</td>
-    <td class="tg-yw4l">CharRNN model with multinomial distribution to predict
-    the next word</td>
+    <td class="tg-yw4l">CharRNN model with multinomial distribution</td>
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Poem_Generation.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
