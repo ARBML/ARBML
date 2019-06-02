@@ -3,12 +3,14 @@
 كما نعلم تعلم الآلة والذكاء الإصطناعي اصبح له أهمية كبرى في الكثير من المجالات كالرؤية الحاسوبية ، معالجة اللغة الطبيعية ، الخ ... ولكن لسوء الحظ ليس هناك الكثير من المصادر مفتوحة المصدر لتسهيلها للناطقين باللغة العربية.
 </div>
 
-## الطموح
+## <div dir="rtl">هدفنا</div>
+<div dir="rtl">
 هدفنا هو اثراء المحتوى العربي بإنشاء عدد من المشاريع مفتوحة المصدر لكي نشير لأهمية تعلم الآلة في حياتنا. لذلك نريد إنشاء برامج لتسهيل العرب من التعرف على أهمية الذكاء الإصطناعي وتعلم الآلة . 
+</div>
 
-## النماذج
+## <div dir="rtl">النماذج</div>
 
-<table class="tg">
+<table class="tg" dir="rtl">
   <tr>
     <th class="tg-yw4l"><b>الإسم</b></th>
     <th class="tg-yw4l"><b>الوصف</b></th>
@@ -71,7 +73,7 @@
 </table>
   
 ## Planned Models
-<table class="tg">
+<table class="tg" dir="rtl">
   <tr>
     <td class="tg-yw4l">تصنيف الملفات</td>
   </tr>
@@ -87,7 +89,7 @@
 
 ## Datasets 
 
-<table class="tg">
+<table class="tg" dir="rtl">
   <tr>
     <td class="tg-yw4l"><a href = "https://www.kaggle.com/mloey1/ahdd1"> الأرقام</a> and <a href = "https://www.kaggle.com/mloey1/ahcd1">الحروف</a></td>
   </tr>
