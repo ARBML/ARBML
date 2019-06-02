@@ -14,7 +14,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
   </tr>
   <tr>
     <td class="tg-yw4l">Arabic Diactrization</td>
-    <td class="tg-yw4l">Simple RNN model ported from [Shakkala](https://github.com/Barqawiz/Shakkala)</td>
+    <td class="tg-yw4l">Simple RNN model ported from <a href ="https://github.com/Barqawiz/Shakkala">Shakkala</a></td>
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/Interfaces/Notebooks/Arabic_Diactrization.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '30px' >
     </a></td>
@@ -54,7 +54,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
 
   <tr>
     <td class="tg-yw4l">Arabic Words Embedding</td>
-    <td class="tg-yw4l">N-Grams model ported from [aravec](https://github.com/bakrianoo/aravec)</td>
+    <td class="tg-yw4l">N-Grams model ported from <a href ="https://github.com/bakrianoo/aravec">Aravec</a></td></td>
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/Interfaces/Notebooks/Arabic_Words_Embedding.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '30px' >
     </a></td>
