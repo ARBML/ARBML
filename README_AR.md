@@ -1,5 +1,7 @@
-## الدافع 
+## <div dir="rtl">الدافع</div>
+<div dir="rtl">
 كما نعلم تعلم الآلة والذكاء الإصطناعي اصبح له أهمية كبرى في الكثير من المجالات كالرؤية الحاسوبية ، معالجة اللغة الطبيعية ، الخ ... ولكن لسوء الحظ ليس هناك الكثير من المصادر مفتوحة المصدر لتسهيلها للناطقين باللغة العربية.
+</div>
 
 ## الطموح
 هدفنا هو اثراء المحتوى العربي بإنشاء عدد من المشاريع مفتوحة المصدر لكي نشير لأهمية تعلم الآلة في حياتنا. لذلك نريد إنشاء برامج لتسهيل العرب من التعرف على أهمية الذكاء الإصطناعي وتعلم الآلة . 
@@ -24,7 +26,7 @@
 
   <tr>
     <td class="tg-yw4l">التعرف على الأرقام</td>
-    <td class="tg-yw4l"> RNN model </td>
+    <td class="tg-yw4l"> RNN </td>
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Digits_Classification.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg"height = '20px' >
     </a></td>
@@ -33,7 +35,7 @@
 
   <tr>
     <td class="tg-yw4l">التعرف على الحروف </td>
-    <td class="tg-yw4l"> RNN m</td>
+    <td class="tg-yw4l"> RNN </td>
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Letters_Classification.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
