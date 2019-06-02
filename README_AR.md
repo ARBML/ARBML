@@ -63,7 +63,7 @@
   </tr>
 
   <tr>
-    <td class="tg-yw4l">Words Embedding</td>
+    <td class="tg-yw4l">تضمين اللغة العربية</td>
     <td class="tg-yw4l">N-Grams  <a href ="https://github.com/bakrianoo/aravec">Aravec</a></td></td>
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Words_Embedding.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
@@ -72,7 +72,7 @@
   </tr>
 </table>
   
-## Planned Models
+## <div dir="rtl">النماذج المخطط إضافتها</div>
 <table class="tg" dir="rtl">
   <tr>
     <td class="tg-yw4l">تصنيف الملفات</td>
@@ -87,11 +87,11 @@
   </tr>
 </table>
 
-## Datasets 
+## <div dir="rtl">البيانات</div> 
 
 <table class="tg" dir="rtl">
   <tr>
-    <td class="tg-yw4l"><a href = "https://www.kaggle.com/mloey1/ahdd1"> الأرقام</a> and <a href = "https://www.kaggle.com/mloey1/ahcd1">الحروف</a></td>
+    <td class="tg-yw4l"><a href = "https://www.kaggle.com/mloey1/ahdd1"> الأرقام</a> و <a href = "https://www.kaggle.com/mloey1/ahcd1">الحروف</a></td>
   </tr>
 
   <tr>
