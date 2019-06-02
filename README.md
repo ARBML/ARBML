@@ -11,6 +11,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     <th class="tg-yw4l"><b>Name</b></th>
     <th class="tg-yw4l"><b>Description</b></th>
     <th class="tg-yw4l"><b>Notebook</b></th>
+    <th class="tg-yw4l"><b>Demo</b></th>
   </tr>
   <tr>
     <td class="tg-yw4l">Arabic Diactrization</td>
@@ -18,6 +19,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Diactrization.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '25px' >
     </a></td>
+    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '30px'/></a></td>
   </tr>
 
   <tr>
