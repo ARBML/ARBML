@@ -69,11 +69,8 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
   </tr>
 </table>
   
-## Work In Progress 
+## Planned Models
 <table class="tg">
-  <tr>
-    <th class="tg-yw4l"><b>Name</b></th>
-  </tr>
   <tr>
     <td class="tg-yw4l">Sentiment Classification</td>
   </tr>
@@ -88,10 +85,8 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
 </table>
 
 ## Datasets 
+
 <table class="tg">
-  <tr>
-    <th class="tg-yw4l"><b>Name</b></th>
-  </tr>
   <tr>
     <td class="tg-yw4l">Binary Format of Arabic<a href = "https://www.kaggle.com/mloey1/ahdd1"> Digits</a> and <a href = "https://www.kaggle.com/mloey1/ahcd1">Letters</a></td>
   </tr>
@@ -104,6 +99,9 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     <td class="tg-yw4l">Translation ported from <a href = "http://www.manythings.org">manythings</a></td>
   </tr>
 </table>
+
+## Contribution 
+Check the CONTRIBUTING.md file in the main repository  for a detailed explanantion about how to contribute. 
 
 ## Community 
 This is an open space community where we don't force members to do stuff. As long as you are motivated and have the passion to help the community to grow you are always welcomed. More importantly, _plan your ideas well and take the time before committing yourself into a project_. 
