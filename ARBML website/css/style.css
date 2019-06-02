@@ -166,6 +166,10 @@ body {
   margin-top: 3px;
 }
 
+.colab {
+  color: #271900;
+}
+
 .card-footer {
   font-size: 0.75em;
 }

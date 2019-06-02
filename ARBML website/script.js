@@ -36,7 +36,7 @@ $(document).ready(function() {
                             <a href="${
                               cardjson.liveLink
                             }" class="btn btn-outline-primary"
-                              >تجربة حية <i class="fa fa-desktop"></i
+                              >تجربة حية <i class="fa fab fa-chrome"></i
                             ></a>
                           </div>
                         </div>
