@@ -19,7 +19,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Diactrization.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '25px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '25px'/></a></td>
+    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
   <tr>
@@ -28,7 +28,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Digits_Classification.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg"height = '25px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '25px'/></a></td>
+    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
   <tr>
@@ -37,7 +37,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Letters_Classification.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '25px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '25px'/></a></td>
+    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
   <tr>
@@ -46,7 +46,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_nmt_attention.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '25px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '25px'/></a></td>
+    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
    <tr>
@@ -56,7 +56,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Poem_Generation.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '25px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '25px'/></a></td>
+    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
   <tr>
@@ -65,7 +65,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Words_Embedding.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '25px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '25px'/></a></td>
+    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 </table>
   
