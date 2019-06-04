@@ -66,12 +66,21 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     </a></td>
     <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
+
+  <tr>
+    <td class="tg-yw4l">Arabic Sentiment Classification</td>
+    <td class="tg-yw4l">RNN with Bidirectional layer <a href ="https://github.com/bakrianoo/aravec">Aravec</a></td></td>
+    <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Sentiment_Classification.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
+    </a></td>
+    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+  </tr>
 </table>
   
 ## Planned Models
 <table class="tg">
   <tr>
-    <td class="tg-yw4l">Sentiment Classification</td>
+    <td class="tg-yw4l">OCR</td>
   </tr>
 
   <tr>
@@ -96,6 +105,10 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
   
   <tr>
     <td class="tg-yw4l">Translation ported from <a href = "http://www.manythings.org">manythings</a></td>
+  </tr>
+
+  <tr>
+    <td class="tg-yw4l">Product reviews <a href = "https://github.com/hadyelsahar/large-arabic-sentiment-analysis-resouces">Large Arabic Resources For Sentiment Analysis</a></td>
   </tr>
 </table>
 
