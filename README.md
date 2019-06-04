@@ -11,7 +11,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
     <th class="tg-yw4l"><b>Name</b></th>
     <th class="tg-yw4l"><b>Description</b></th>
     <th class="tg-yw4l"><b>Notebook</b></th>
-    <th class="tg-yw4l"><b>Demo</b></th>
+    <th class="tg-yw4l"><b>Demo (soon)</b></th>
   </tr>
   <tr>
     <td class="tg-yw4l">Arabic Diactrization</td>
@@ -69,7 +69,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
 
   <tr>
     <td class="tg-yw4l">Arabic Sentiment Classification</td>
-    <td class="tg-yw4l">RNN with Bidirectional layer <a href ="https://github.com/bakrianoo/aravec">Aravec</a></td></td>
+    <td class="tg-yw4l">RNN with Bidirectional layer </td></td>
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Sentiment_Classification.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
@@ -77,21 +77,6 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
   </tr>
 </table>
   
-## Planned Models
-<table class="tg">
-  <tr>
-    <td class="tg-yw4l">OCR</td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">Part of Speech Recognition</td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">Auto-Complete</td>
-  </tr>
-</table>
-
 ## Datasets 
 
 <table class="tg">
@@ -104,7 +89,7 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
   </tr>
   
   <tr>
-    <td class="tg-yw4l">Translation ported from <a href = "http://www.manythings.org">manythings</a></td>
+    <td class="tg-yw4l">Arabic to English ported from <a href = "http://www.manythings.org">manythings</a></td>
   </tr>
 
   <tr>
