@@ -4,6 +4,13 @@ As you know machine learning has proven its importance in many fields, like comp
 ## Goal
 Our goal is to enrich the Arabic content by creating open-source projects and open the community eyes on the significance of machine learning. We want to create interactive **applications** that allow **novice** Arabs to learn more about machine learning and appreciate its advances. 
 
+## Procedure 
+Our procedure is generalized and can be generalized to many language models not just Arabic. This standrized approach takes part as multiple steps starting from training on colab then porting the models to the web. 
+
+![procedure](https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/procedure.png)
+
+
+
 ## Models
 
 <table class="tg">
