@@ -1,3 +1,6 @@
+![procedure](https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/logo.png)
+
+
 ## Motivation 
 As you know machine learning has proven its importance in many fields, like computer vision, NLP, reinforcement learning, adversarial learning, etc ..  Unfortunately, there is a little work to make machine learning accessible for Arabic-speaking people. 
 
