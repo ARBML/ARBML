@@ -11,8 +11,9 @@ Our goal is to enrich the Arabic content by creating open-source projects and op
 
 ## Procedure 
 Our procedure is generalized and can be generalized to many language models not just Arabic. This standrized approach takes part as multiple steps starting from training on colab then porting the models to the web. 
-
-![procedure](https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/procedure.png)
+ <p align="center"> 
+<img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/procedure.png"/>
+ </p>
 
 
 
