@@ -1,4 +1,6 @@
-<center><img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/logo.png" width = "100px"/></center>
+ <p align="center"> 
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/logo.png" width = "200px"/>
+ </p>
 
 
 ## Motivation 
