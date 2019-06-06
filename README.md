@@ -1,4 +1,4 @@
-![procedure](https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/logo.png)
+<center><img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/logo.png" width = "100px"/></center>
 
 
 ## Motivation 
