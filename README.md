@@ -1,4 +1,5 @@
  <p align="center"> 
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
  <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/logo.png" width = "200px"/>
  </p>
 
@@ -121,3 +122,14 @@ As a start we will start on Github for hosting the website, models, datasets and
 
 ## Sponsors 
 We are not sponsored and all the members are voluntarily working on the projects. 
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="https://github.com/MagedSaeed"><img src="https://avatars2.githubusercontent.com/u/18549783?v=4" width="100px;" alt="MagedSaeed"/><br /><sub><b>MagedSaeed</b></sub></a><br /><a href="#design-MagedSaeed" title="Design">🎨</a> <a href="#ideas-MagedSaeed" title="Ideas, Planning, & Feedback">🤔</a> <a href="#platform-MagedSaeed" title="Packaging/porting to new platform">📦</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

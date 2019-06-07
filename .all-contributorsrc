@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "MagedSaeed",
+      "name": "MagedSaeed",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/18549783?v=4",
+      "profile": "https://github.com/MagedSaeed",
+      "contributions": [
+        "design",
+        "ideas",
+        "platform"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ARBML",
+  "projectOwner": "zaidalyafeai",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
