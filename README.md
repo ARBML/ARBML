@@ -94,19 +94,35 @@ Our procedure is generalized and can be generalized to many language models not 
 ## Datasets 
 
 <table class="tg">
+
   <tr>
-    <td class="tg-yw4l">Binary Format of Arabic<a href = "https://www.kaggle.com/mloey1/ahdd1"> Digits</a> and <a href = "https://www.kaggle.com/mloey1/ahcd1">Letters</a></td>
+    <th class="tg-yw4l"><b>Name</b></th>
+    <th class="tg-yw4l"><b>Description</b></th>
   </tr>
 
   <tr>
-    <td class="tg-yw4l">Poems Scrapped from <a href = "https://www.aldiwan.net/">aldiwan</a></td>
+    <td class="tg-yw4l">Arabic Digits </td>
+    <td class="tg-yw4l">Binary Arabic <a href = "https://www.kaggle.com/mloey1/ahdd1"> Digits</a> </td>
+  </tr>
+
+  <tr>
+    <td class="tg-yw4l">Arabic Letters </td>
+    <td class="tg-yw4l">Binary Arabic <a href = "https://www.kaggle.com/mloey1/ahcd1">Letters</a></td>
+  </tr>
+
+
+  <tr>
+    <td class="tg-yw4l">Arabic Poems </td>
+    <td class="tg-yw4l">Arabic Poems Scrapped from <a href = "https://www.aldiwan.net/">aldiwan</a></td>
   </tr>
   
   <tr>
-    <td class="tg-yw4l">Arabic to English ported from <a href = "http://www.manythings.org">manythings</a></td>
+    <td class="tg-yw4l">Arabic Translation </td>
+    <td class="tg-yw4l">Paralled Arabic English Translation ported from  <a href = "http://www.manythings.org">manythings</a></td>
   </tr>
 
   <tr>
+    <td class="tg-yw4l">Product Reviews </td>
     <td class="tg-yw4l">Product reviews <a href = "https://github.com/hadyelsahar/large-arabic-sentiment-analysis-resouces">Large Arabic Resources For Sentiment Analysis</a></td>
   </tr>
 </table>
