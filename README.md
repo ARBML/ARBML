@@ -9,6 +9,9 @@ As you know machine learning has proven its importance in many fields, like comp
 ## Goal
 Our goal is to enrich the Arabic content by creating open-source projects and open the community eyes on the significance of machine learning. We want to create interactive **applications** that allow **novice** Arabs to learn more about machine learning and appreciate its advances. 
 
+## Challenges 
+Arabic language has many complicated features compared to other languages. First, Arabic language is written right to left. Second, it contains many letters that cannot be pronounced by most foreigners like `ض ، غ ، ح ، خ، ظ`. Moreover, Arabic language contains special characters called Diacritics which are special characters that help readers pronounced words correctly. For instance the statement ` السَّلامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ` containts special characters after most of the letters. The diactrics follow special rules to be given to a certain character. These rules are construct a complete area called `النَّحْوُ الْعَرَبِيُّ`. Compared to English, the Arabic language words letters are mostly connected `اللغة` as making them disconnected is difficult to read `ا ل ل غ ة`. Finally, there as many as half a billion people speaking Arabic which resulted in many dialects in different countires. 
+
 ## Procedure 
 Our procedure is generalized and can be generalized to many language models not just Arabic. This standrized approach takes part as multiple steps starting from training on colab then porting the models to the web. 
  <p align="center"> 
@@ -27,7 +30,7 @@ Our procedure is generalized and can be generalized to many language models not 
     <th class="tg-yw4l"><b>Demo (soon)</b></th>
   </tr>
   <tr>
-    <td class="tg-yw4l">Arabic Diactrization</td>
+    <td class="tg-yw4l">Arabic Diacritization</td>
     <td class="tg-yw4l">Simple RNN model ported from <a href ="https://github.com/Barqawiz/Shakkala">Shakkala</a></td>
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Diactrization.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
@@ -126,7 +129,7 @@ Our procedure is generalized and can be generalized to many language models not 
 </table>
 
 ## Contribution 
-Check the CONTRIBUTING.md file in the main repository  for a detailed explanantion about how to contribute. 
+Check the [CONTRIBUTING.md](https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/CONTRIBUTING.md) for a detailed explanantion about how to contribute. 
 
 ## Community 
 This is an open space community where we don't force members to do stuff. As long as you are motivated and have the passion to help the community to grow you are always welcomed. More importantly, _plan your ideas well and take the time before committing yourself into a project_. 
