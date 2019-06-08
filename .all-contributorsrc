@@ -15,6 +15,15 @@
         "ideas",
         "platform"
       ]
+    },
+    {
+      "login": "MarchWorks",
+      "name": "March Works",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/40798653?v=4",
+      "profile": "http://twitter.com/marchworks",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
