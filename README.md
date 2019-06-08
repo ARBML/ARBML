@@ -128,19 +128,32 @@ Our procedure is generalized and can be generalized to many language models not 
   </tr>
 </table>
 
+## Interfaces 
+To make models easily accessible by contributers, developers and novice users we use two approaches
+
+### Google Colab 
+Google colab is a free service that is offered by Google for research purposes. The interface of a colab notebook is very similar to jupyter notebooks with slight differences. Google offers three hardware accelerators `CPU, GPU` and `TPU` for speeding up training. We almost all the time use `GPU` because it is easier to work with and acheives good results in a reasonable time. Check this great [tutorial](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d) on medium.
+
+### TensorFlow.js 
+TensorFlow.js is part of the TensorFlow ecosystem that supports training and inference of machine learning models in the browser. Please check these steps if you want to port models to the web:
+
+1. Use keras to train models then save the model as `model.save('keras.h5')`
+2. Install the TensorFlow.js converter using `pip install tensorflowjs`
+3. Use the following script to `tensorflowjs_converter --input_format keras keras.h5 model/`
+
+4. The `model` directory will contain the files `model.json` and weight files same to `group1-shard1of1`
+
+5. Finally you can load the model using TensorFlow.js
+
+Check this [tutorial](https://medium.com/tensorflow/train-on-google-colab-and-run-on-the-browser-a-case-study-8a45f9b1474e) that I made for the complete procedure. 
+
 ## Contribution 
 Check the [CONTRIBUTING.md](https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/CONTRIBUTING.md) for a detailed explanantion about how to contribute. 
 
-## Community 
-This is an open space community where we don't force members to do stuff. As long as you are motivated and have the passion to help the community to grow you are always welcomed. More importantly, _plan your ideas well and take the time before committing yourself into a project_. 
-
 ## Resources 
 As a start we will start on Github for hosting the website, models, datasets and other contents. Unfortunately, there is a limitation on the space that will hunt us in the future. _Please let us know what you suggest on that matter_. 
-
-## Sponsors 
-We are not sponsored and all the members are voluntarily working on the projects. 
+ 
 ## Contributors
-
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
