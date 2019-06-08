@@ -132,7 +132,7 @@ Our procedure is generalized and can be generalized to many language models not 
 To make models easily accessible by contributers, developers and novice users we use two approaches
 
 ### Google Colab 
-Google colab is a free service that is offered by Google for research purposes. The interface of a colab notebook is very similar to jupyter notebooks with slight differences. Google offers three hardware accelerators `CPU, GPU` and `TPU` for speeding up training. We almost all the time use `GPU` because it is easier to work with and acheives good results in a reasonable time. Check this great [tutorial](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d) on medium.
+[Google colaboratory](https://colab.research.google.com/) is a free service that is offered by Google for research purposes. The interface of a colab notebook is very similar to jupyter notebooks with slight differences. Google offers three hardware accelerators `CPU, GPU` and `TPU` for speeding up training. We almost all the time use `GPU` because it is easier to work with and acheives good results in a reasonable time. Check this great [tutorial](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d) on medium.
 
 ### TensorFlow.js 
 TensorFlow.js is part of the TensorFlow ecosystem that supports training and inference of machine learning models in the browser. Please check these steps if you want to port models to the web:
