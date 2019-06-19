@@ -100,6 +100,15 @@ Our procedure is generalized and can be generalized to many language models not 
     </a></td>
     <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
+
+  <tr>
+    <td class="tg-yw4l">Arabic Word Similarity</td>
+    <td class="tg-yw4l">Embedding layers using cosine similarity</td></td>
+    <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Word_Similarity.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
+    </a></td>
+    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+  </tr>
 </table>
   
 ## Datasets 
@@ -139,6 +148,11 @@ Our procedure is generalized and can be generalized to many language models not 
   <tr>
     <td class="tg-yw4l">Image Captions </td>
     <td class="tg-yw4l">30,000 Image paths with captions extracted and translated from <a href = "http://cocodataset.org/#home">COCO 2014</a></td>
+  </tr>
+
+  <tr>
+    <td class="tg-yw4l">Arabic Wiki </td>
+    <td class="tg-yw4l">4,670,509 words cleaned and processed from <a href = "https://linguatools.org/tools/corpora/wikipedia-monolingual-corpora/">Wikipedia Monolingual Corpora</a></td>
   </tr>
 </table>
 
