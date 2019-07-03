@@ -159,7 +159,7 @@ $(document).ready(function() {
 
   async function start() {
     //load the model
-    model = await tf.loadLayersModel("model/model.json");
+    model = await tf.loadLayersModel("model2/model.json");
     console.log("loading the model ...");
     $("#loader").hide();
     $(".inputs").show("slow");

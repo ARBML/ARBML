@@ -19,18 +19,17 @@ async function start()
 
     // load the models
     encoder = await tf.loadLayersModel("model_quantized/model.json");
-    console.log('finished loading the encoder ...')
-
-    console.log(word2idx)
-    $("#loader").hide();
-    $(".inputs").show("slow");
-    $(".outputs").show("slow");
+    console.log('finished loading the encoder ...')    
 
     // warm up 
     enc_input = tf.zeros([10, 1])
     encoder.summary()
     logits = encoder.predict([enc_input, enc_input]);
     console.log("warmed up ")
+
+    $("#loader").hide();
+    $(".inputs").show();
+    $(".outputs").show();
 }
 
 /*
@@ -80,7 +79,7 @@ function find_similar(word){
     let topk_words = indices.dataSync()
     console.log(topk_words)
     let result = " "
-    var post_char = " - "
+    var post_char = " ، "
     var i;
 
     for(i=0 ; i< topk_words.length -1 ; i++)
