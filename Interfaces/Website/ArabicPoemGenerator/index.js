@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   //map the indices to characters
   idx2char = [
     "\t",
@@ -42,7 +41,7 @@ $(document).ready(function() {
     "ى",
     "ي"
   ];
-  //map the characters to indices 
+  //map the characters to indices
   char2idx = {
     "\t": 0,
     "\n": 1,
@@ -90,11 +89,11 @@ $(document).ready(function() {
   $(".inputs").hide();
   $(".outputs").hide();
 
-  //start the model 
+  //start the model
   start();
 
-  /* 
-   * This function loads the model to the memory. 
+  /*
+   * This function loads the model to the memory.
    *
    */
   async function start() {
@@ -105,7 +104,7 @@ $(document).ready(function() {
     $(".outputs").show("slow");
   }
 
-  /* 
+  /*
    * Generate the text once the start button is pressed
    *
    */
@@ -114,20 +113,24 @@ $(document).ready(function() {
     generate_text(model);
   });
 
-  /* 
-   * generate the text using the loaded model 
+  $(".inputs input").keypress(function(e) {
+    if (e.keyCode == 13) {
+      generate_text(model);
+    }
+  });
+  /*
+   * generate the text using the loaded model
    *
    */
 
   async function generate_text(model) {
-    
-    //take initial seed 
+    //take initial seed
     start_string = $(".inputs input").val();
 
-    //number of characters to generate 
+    //number of characters to generate
     num_generate = 150;
 
-    //map the input to indices 
+    //map the input to indices
     input_eval = [];
     for (var i = 0; i < start_string.length; i++) {
       input_eval.push(char2idx[start_string.charAt(i)]);
@@ -140,14 +143,14 @@ $(document).ready(function() {
     text_generated = [];
 
     $(".output-text").text(start_string);
-    
+
     let j = 0;
 
     //loop until we exceed num_generated and we have a new line
-    while(true) {
-      j+=1;
+    while (true) {
+      j += 1;
 
-      //get predictions for the input 
+      //get predictions for the input
       predictions = model.predict(input_eval);
 
       //postprocess the results
@@ -160,22 +163,22 @@ $(document).ready(function() {
       predicted_id = predicted_id.dataSync()[0];
       input_eval = tf.expandDims([predicted_id], 0);
 
-      //get the next char 
+      //get the next char
       next_char = idx2char[predicted_id];
       text_generated.push(idx2char[predicted_id]);
 
-      //break if we exceed the maximum and we have a new line 
-      if ((next_char === "\n") && (j > num_generate )){
-        break
+      //break if we exceed the maximum and we have a new line
+      if (next_char === "\n" && j > num_generate) {
+        break;
       }
 
-      //ignore tab 
+      //ignore tab
       if (next_char === "\t") continue;
 
-      //show the output 
+      //show the output
       $(".output-text").text($(".output-text").text() + next_char);
 
-      //allow th gui to show the results 
+      //allow th gui to show the results
       await tf.nextFrame();
     }
   }

@@ -1,101 +1,74 @@
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>تضميين الكلمات</title>
 
-<body>
-    <input type="text" id="input_text">
-    <button onclick = "translate()"> تضمين </button>
-    <p id= 'output_text'></p>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  </head>
+  <body>
+    <div class="container" id="maincontainer">
+      <div class="av-container">
+        <div id="avatar"> تَضْمييـــن الكَلمَات</div>
+        <!-- <img
+          src="./avatar-cropped.png"
+          alt="cannot find the image"
+          id="avatar"
+        /> -->
+      </div>
+      <div class="info text-right">
+        <h3>:الفكرة</h3>
+        <p>
+          يقوم هذا النموذج بإيجاد الكلمات المشابهة لكلمة معينة
+        </p>
+      </div>
+      <div id="loader">
+        <div class="lds-grid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        الرجاء الانتظار لتهيئة النموذج
+      </div>
+      <div class="inputs text-right">
+        <h3>  : _ أدخل كلمة أو كلمتين مفصولة ب      </h3>
+      </div>
+      <div class = "inputs text-right">
+          <input
+          readonly
+          placeholder="نتيجة التشكيل هنا"
+          dir="ltr"
+          class="output-text"
+          id = "output">
 
-<script>
-var word2idx = new Object();
-var idx2word = new Object();
+        <button class="btn btn-dark btn-sm submit">!تضميين</button>
 
-var encoder = undefined
-var decoder = undefined
-var vocab_size = 10000
+        <input id = 'input' placeholder="اكتب هنا" dir="rtl">
 
-start()
+      </div>
+    </div>
 
-/*
-* start the models and warm up 
-*/
-
-async function start()
-{
-    // load the dictionaries
-    await loadDict('word2idx.csv')
-    await loadDict('idx2word.csv')
-
-    // load the models
-    encoder = await tf.loadLayersModel("encoder/model.json");
-    console.log('finished loading the encoder ...')
-
-    // warm up 
-    enc_input = tf.zeros([10, 1])
-    logits = encoder.predict([enc_input, enc_input]);
-    console.log("warmed up ")
-}
-
-/*
-* load word2idx and idx2word
-*/
-
-async function loadDict(url)
-{
-    await $.ajax({
-    url: url,
-    dataType: 'text',
-    success:function(data){
-        console.log(url)
-        lst = data.split(/\r\n|\n/)
-        for(var i = 0 ; i < lst.length ;i++){
-            key = (lst[i]).split(',')[0]
-            value = (lst[i]).split(',')[1]
-            if (url === "word2idx.csv")
-                word2idx[key] = parseInt(value)
-            else
-                idx2word[key] = value
-        }
-        
-    },})
-}
-
-/*
-* find the similar words
-*/
-
-
-function find_similar(word){
-    let word_idx = word2idx[word]
-    var in_arr2 = tf.range(0, vocab_size, 1)
-    var in_arr1 = tf.fill([vocab_size, 1], word_idx)
-
-    var out = encoder.predict([in_arr1, in_arr2])
-    out = out.reshape([vocab_size])
-
-    //find the top k similar indices 
-    const {values, indices} = tf.topk(out, 5)
-
-    //get the results from the dictionary 
-    let topk_words = indices.dataSync()
-    let result = " "
-    for(i=0 ; i< topk_words.length ; i++)
-        result += idx2word[topk_words[i]]+ " - "
-    return result
-}
-/*
-* given a statement in arabic translate to english
-*/
-
-async function translate()
-{
-    // get input 
-    let word = document.getElementById('input_text').value
-    let result = find_similar(word)
-    
-    //show output 
-    document.getElementById("output_text").innerHTML = result
-    
-}
-</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

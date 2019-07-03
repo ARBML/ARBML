@@ -1,104 +1,74 @@
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>مصنّف السلعة</title>
 
-<body>
-    <input type="text" id="input_text">
-    <button onclick = "classify()"> إبدأ </button>
-    <p id= 'output_text'></p>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  </head>
+  <body>
+    <div class="container" id="maincontainer">
+      <div class="av-container">
+        <div id="avatar">مصنّف السلعة</div>
+        <!-- <img
+          src="./avatar-cropped.png"
+          alt="cannot find the image"
+          id="avatar"
+        /> -->
+      </div>
+      <div class="info text-right">
+        <h3>:الفكرة</h3>
+        <p>
+          يقوم هذا النموذج بتصنيف وصف السلعة إلى إيجابي أو سلبي. 
+        </p>
+      </div>
+      <div id="loader">
+        <div class="lds-grid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        الرجاء الانتظار لتهيئة النموذج
+      </div>
+      <div class="inputs text-right collapse">
+        <h3>:أدخل جملة تصف سلعة معينة</h3>
+      </div>
+      <div class = "inputs text-right collapse">
+          <input
+          readonly
+          placeholder="النتيجة هنا"
+          dir="ltr"
+          class="output-text"
+          id = "output">
 
-<script>
-var word2idx = new Object();
-var model = undefined
+        <button class="btn btn-dark btn-sm submit">!صنّـــف</button>
 
-start()
+        <input id = 'input' placeholder=" اكتب هنا جملة مثلا : لقد كانت سلعة جيدة" dir="rtl">
 
-/*
-* start the models and warm up 
-*/
+      </div>
+    </div>
 
-async function start()
-{
-    // load the dictionaries
-    await loadDict('word2idx.csv')
-
-    // load the models
-    model = await tf.loadLayersModel("model/model.json", false);
-    console.log('finished loading the model ...')
-
-    output = model.predict(tf.zeros([1, 113]))
-    console.log('warming up ...')
-    model.summary()
-}
-
-/*
-* load word2idx and idx2word
-*/
-
-async function loadDict(url)
-{
-    await $.ajax({
-    url: url,
-    dataType: 'text',
-    success:function(data){
-        console.log(url)
-        lst = data.split(/\r\n|\n/)
-        for(var i = 0 ; i < lst.length ;i++){
-            key = (lst[i]).split(',')[0]
-            value = (lst[i]).split(',')[1]
-            if (url === "word2idx.csv")
-                word2idx[key] = parseInt(value)
-            else
-                idx2word[key] = value
-        }
-        
-    },})
-}
-
-/*
-* create a sequence of integers using word2idx from a statement
-*/
-
-function create_sequences(sentence)
-{
-    max_tokens = 113 
-    
-    let words = sentence.trim().split(/\s+/)
-    seq = Array.from(Array(max_tokens), () => 0) 
-    for(var i= 0 ; i< words.length ; i++)
-    {
-        seq[i] = word2idx[words[i]]
-    }
-    return seq
-}
-
-/*
-* given a statement in arabic translate to english
-*/
-
-async function classify()
-{
-    // get input 
-    sentence = document.getElementById('input_text').value
-    
-    // convert the input statement to a sequence of integers
-    sequence = create_sequences(sentence)
-
-    var input = tf.tensor(sequence).asType("int32")
-    input = tf.expandDims(input, 0)
-    
-
-    input.print()
-    pred = model.predict(input).dataSync()
-    
-    // return the output
-    result = ""
-    if (pred >= 0.5)
-        result = "إيجابي " + pred
-    else
-        result = "سلبي " + pred
-    //show output 
-    document.getElementById("output_text").innerHTML = result
-    
-}
-</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
