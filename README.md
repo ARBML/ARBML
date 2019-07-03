@@ -137,7 +137,7 @@ Our procedure is generalized and can be generalized to many language models not 
   
   <tr>
     <td class="tg-yw4l">Arabic Translation </td>
-    <td class="tg-yw4l">10,940 paralled arabic to english translation ported from  <a href = "http://www.manythings.org">manythings</a></td>
+    <td class="tg-yw4l">100,000 paralled arabic to english translation ported from  <a href = "http://opus.nlpl.eu/OpenSubtitles-v2018.php">OpenSubtitles</a></td>
   </tr>
 
   <tr>
