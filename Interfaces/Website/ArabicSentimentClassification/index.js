@@ -1,7 +1,8 @@
 $(document).ready(function() {
   var word2idx = new Object();
   var model = undefined
-  
+  max_tokens = 113 
+
   /*
   * start the models and warm up 
   */
@@ -15,7 +16,7 @@ $(document).ready(function() {
       model = await tf.loadLayersModel("model/model.json", false);
       console.log('finished loading the model ...')
       
-      output = model.predict(tf.zeros([1, 113]))
+      output = model.predict(tf.zeros([1, max_tokens]))
       console.log('warming up ...')
       $("#loader").hide();
       $(".inputs").show();
@@ -52,7 +53,6 @@ $(document).ready(function() {
   
   function create_sequences(sentence)
   {
-      max_tokens = 113 
       
       let words = sentence.trim().split(/\s+/)
       seq = Array.from(Array(max_tokens), () => 0) 
@@ -83,9 +83,9 @@ $(document).ready(function() {
       // return the output
       result = ""
       if (pred >= 0.5)
-          result = "إيجابي " + pred
+          result = "إيجابي بنسبة %" + Math.round(pred * 100)
       else
-          result = "سلبي " + pred
+          result = "سلبي بنسبة %" + (100 -Math.round(pred * 100))
       //show output 
       $("#output").val(result);
   }

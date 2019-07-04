@@ -154,18 +154,19 @@ $(document).ready(function() {
     27: "ّّ"
   };
 
-  $(".inputs").hide();
-  $(".outputs").hide();
+  max_len = 315
 
   async function start() {
     //load the model
     model = await tf.loadLayersModel("model2/model.json");
     console.log("loading the model ...");
-    $("#loader").hide();
-    $(".inputs").show("slow");
-    $(".outputs").show("slow");
+    
     // warm up
-    logits = model.predict(tf.zeros([1, 315]));
+    logits = model.predict(tf.zeros([1, max_len]));
+
+    $("#loader").hide();
+    $(".inputs").show();
+    $(".outputs").show();
   }
 
   function mapToHarakah(predicted_ids) {
@@ -184,7 +185,7 @@ $(document).ready(function() {
     input_int = [];
 
     // loop over the max length
-    for (var i = 0; i < 315; i++) {
+    for (var i = 0; i < max_len; i++) {
       if (i >= input.length) input_int.push(0);
       else {
         char = input.charAt(i);
@@ -230,8 +231,8 @@ $(document).ready(function() {
     // input = document.getElementById("input_text").value;
 
     // process input
-    console.log("input");
-    console.log(input);
+    if (input.length < max_len){
+
     input_int = mapToIds(input);
     tensor = preprocess(input_int);
     predictions = model.predict(tensor);
@@ -240,10 +241,10 @@ $(document).ready(function() {
     predicted_ids = postprocess(predictions);
     harakat = mapToHarakah(predicted_ids);
     result = shakkel(input, harakat);
-
-    //show output
-    // document.getElementById("output_text").innerHTML = result;
-    console.log(result);
+    }
+    else{
+      result = " النص يحتوي " + input.length + " أكثر من الحد الأدنى 315 حرف " 
+    }
     $(".output-text").text(result);
   }
   start();

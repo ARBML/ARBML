@@ -73,13 +73,6 @@
   line-height: 1.5em;
 }
 
-.submit {
-  margin: 20px auto !important;
-  width: 90% !important;
-  height: 60px;
-  line-height: 50px;
-  display: block !important;
-}
 
 .outputs h3 {
   font-size: 1.25rem;

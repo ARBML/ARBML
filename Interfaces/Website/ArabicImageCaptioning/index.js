@@ -53,6 +53,7 @@ async function start()
     $("#loader").hide();
     $("#inputs").show();
     $("#outputs").show();
+    $("#output").val("");
 }
 
 /*
@@ -83,6 +84,7 @@ function getImageTensor(){
     let img = document.getElementById("img");
     //convert to tensor 
     var tensor = tf.browser.fromPixels(img);
+    console.log(tensor.shape)
     tensor = tf.expandDims(tensor, 0)
     tensor = tensor.div(tf.scalar(255))
     tensor = tf.image.resizeBilinear(tensor, [224, 224])
@@ -134,7 +136,7 @@ async function caption()
 
     }
     //show output 
-    $(".output-text").text(result);
+    $("#output  ").val(result);
     
 }
   start();

@@ -156,7 +156,7 @@ Our procedure is generalized and can be generalized to many language models not 
   </tr>
 </table>
 
-## Interfaces 
+## Tools 
 To make models easily accessible by contributers, developers and novice users we use two approaches
 
 ### Google Colab 
@@ -174,6 +174,20 @@ TensorFlow.js is part of the TensorFlow ecosystem that supports training and inf
 5. Finally you can load the model using TensorFlow.js
 
 Check this [tutorial](https://medium.com/tensorflow/train-on-google-colab-and-run-on-the-browser-a-case-study-8a45f9b1474e) that I made for the complete procedure. 
+
+## Website 
+We developed many models to run directly in the browser. Using TensorFlow.js the models run using the client GPU. Since the webpage is static there is no risk of privacy or security. Here is the main intefrace of the website 
+
+<p align="center"> 
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/images/web_interface.png"/>
+ </p>
+
+
+The added models so far 
+
+
+### Poem Generation 
+
 
 ## Contribution 
 Check the [CONTRIBUTING.md](https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/CONTRIBUTING.md) for a detailed explanantion about how to contribute. 

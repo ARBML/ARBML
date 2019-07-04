@@ -30,6 +30,7 @@ async function start()
     $("#loader").hide();
     $(".inputs").show();
     $(".outputs").show();
+    $("#output").val("");
 }
 
 /*
