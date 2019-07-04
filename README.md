@@ -208,7 +208,7 @@ The added models so far
 
  ### Image Captioning
  <p align="center"> 
- <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/diactrization.png"/>
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/caption.png"/>
  </p>
 
  ### Diactrization 
