@@ -213,7 +213,7 @@ The added models so far
 
  ### Diactrization 
  <p align="center"> 
- <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/web_interface.png"/>
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/diactrization.png"/>
  </p>
 
 
