@@ -179,14 +179,42 @@ Check this [tutorial](https://medium.com/tensorflow/train-on-google-colab-and-ru
 We developed many models to run directly in the browser. Using TensorFlow.js the models run using the client GPU. Since the webpage is static there is no risk of privacy or security. Here is the main intefrace of the website 
 
 <p align="center"> 
- <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/images/web_interface.png"/>
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/web_interface.png"/>
  </p>
 
 
 The added models so far 
 
 
-### Poem Generation 
+### Poems Generation
+<p align="center"> 
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/poems.png"/>
+ </p>
+
+ ### English Translation
+ <p align="center"> 
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/translation.png"/>
+ </p>
+
+ ### Words Embedding
+ <p align="center"> 
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/embedding.png"/>
+ </p>
+
+ ### Sentiment Classification 
+ <p align="center"> 
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/sentiment.png"/>
+ </p>
+
+ ### Image Captioning
+ <p align="center"> 
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/diactrization.png"/>
+ </p>
+
+ ### Diactrization 
+ <p align="center"> 
+ <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/web_interface.png"/>
+ </p>
 
 
 ## Contribution 
