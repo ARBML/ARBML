@@ -46,21 +46,26 @@
         الرجاء الانتظار لتهيئة النموذج
       </div>
       <div class="inputs text-right collapse">
-        <h3>:أدخل جملة أو نصاّ</h3>
-      </div>
-      <div class = "inputs text-right collapse">
-          <input
-          readonly
-          placeholder="Translated sentence here"
-          dir="ltr"
-          class="output-text"
-          id = "output">
-
-        <button class="btn btn-dark btn-sm submit">!ترجِــــم</button>
-
-        <input id = 'input' placeholder=" اكتب هنا باللغة العربية" dir="rtl">
-
-      </div>
+          <h3>:أدخل جملة باللغة العربية</h3>
+  
+          <form class="form-inline" dir = "rtl">  
+              <input
+              type="text"
+              class="form-control form-control-sm text-right"
+              placeholder=" اكتب هنا جملة "
+              id = "input"
+              />
+      
+            <button type = "button" class="btn btn-dark btn-sm submit text-right"> ترجـــم</button>
+      
+              <input
+              readonly
+              type="text"
+              class="form-control form-control-sm text-left "
+              placeholder="Translated Text"
+              id = "output"
+            />
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

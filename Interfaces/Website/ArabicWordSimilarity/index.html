@@ -49,21 +49,26 @@
        
       </div>
       <div class="inputs text-right collapse">
-        <h3>  : _ أدخل كلمة أو كلمتين مفصولة ب      </h3>
-      </div>
-      <div class = "inputs text-right collapse">
-          <input
-          readonly
-          placeholder="النتيجة"
-          dir="rtl"
-          class="output-text"
-          id = "output">
-
-        <button class="btn btn-dark btn-sm submit">!تضميين</button>
-
-        <input id = 'input' placeholder="اكتب هنا" dir="rtl">
-
-      </div>
+          <h3> : _  أدخل كلمة أوكلمتين مفصولة ب  </h3>
+  
+          <form class="form-inline" dir = "rtl">  
+              <input
+              type="text"
+              class="form-control form-control-sm text-right"
+              placeholder=" اكتب هنا كلمة مثل مكه أو احمد_حلمي"
+              id = "input"
+              />
+      
+            <button type = "button" class="btn btn-dark btn-sm submit text-right"> تضمييــن</button>
+      
+              <input
+              readonly
+              type="text"
+              class="form-control form-control-sm text-right"
+              placeholder="النتيجة هنا"
+              id = "output"
+            />
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

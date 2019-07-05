@@ -47,20 +47,31 @@
       </div>
       <div class="inputs text-right collapse">
         <h3>:أدخل جملة تصف سلعة معينة</h3>
+
+        <form class="form-inline" dir = "rtl">  
+            <input
+            type="text"
+            class="form-control form-control-sm text-right"
+            placeholder=" اكتب هنا جملة مثلا : لقد كانت سلعة جيدة"
+            id = "input"
+            />
+    
+          <button type = "button" class="btn btn-dark btn-sm submit text-right">صنـــف !</button>
+    
+            <input
+            readonly
+            type="text"
+            class="form-control form-control-sm text-right"
+            placeholder="النتيجة هنا"
+            id = "output"
+          />
       </div>
-      <div class = "inputs text-right collapse">
-          <input
-          readonly
-          placeholder="النتيجة هنا"
-          dir="rtl"
-          class="output-text"
-          id = "output">
+      
+     
+      </form>
 
-        <button class="btn btn-dark btn-sm submit">!صنّـــف</button>
-
-        <input id = 'input' placeholder=" اكتب هنا جملة مثلا : لقد كانت سلعة جيدة" dir="rtl">
-
-      </div>
+    
+      
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
