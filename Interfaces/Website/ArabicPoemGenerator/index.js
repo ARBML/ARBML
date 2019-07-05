@@ -125,7 +125,7 @@ $(document).ready(function() {
 
   async function generate_text(model) {
     //take initial seed
-    start_string = $(".inputs input").val();
+    start_string = $(".inputs input").val() + " ";
 
     //number of characters to generate
     num_generate = 150;
@@ -157,7 +157,8 @@ $(document).ready(function() {
       predictions = tf.squeeze(predictions, 0);
 
       //we sample the next char so we don't loop
-      predicted_id = tf.multinomial(predictions, (num_samples = 1));
+      // predicted_id = tf.multinomial(predictions, (num_samples = 1));
+      predicted_id = tf.argMax(predictions, 1)
 
       //postprocessing steps
       predicted_id = predicted_id.dataSync()[0];

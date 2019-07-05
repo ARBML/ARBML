@@ -11,7 +11,7 @@ cardjson = {
 
 $(document).ready(function() {
   $("a").attr("target", "_blank");
-
+  
   function addCard(cardjson) {
     cardjson.desc = cardjson.desc.replace(/(?:\r\n|\r|\n)/g, "<br>");
     newCard = `
