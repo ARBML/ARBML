@@ -27,7 +27,7 @@ Our procedure is generalized and can be generalized to many language models not 
     <th class="tg-yw4l"><b>Name</b></th>
     <th class="tg-yw4l"><b>Description</b></th>
     <th class="tg-yw4l"><b>Notebook</b></th>
-    <th class="tg-yw4l"><b>Demo (soon)</b></th>
+    <th class="tg-yw4l"><b>Demo</b></th>
   </tr>
   <tr>
     <td class="tg-yw4l">Arabic Diacritization</td>
@@ -35,25 +35,7 @@ Our procedure is generalized and can be generalized to many language models not 
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Diactrization.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">Arabic Digits Classification</td>
-    <td class="tg-yw4l">Basic RNN model with classification head</td>
-    <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Digits_Classification.ipynb">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg"height = '20px' >
-    </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
-  </tr>
-
-  <tr>
-    <td class="tg-yw4l">Arabic Letters Classification</td>
-    <td class="tg-yw4l">Basic RNN model with classification head</td>
-    <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Letters_Classification.ipynb">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
-    </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ArabicDiactrization/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
   <tr>
@@ -62,7 +44,7 @@ Our procedure is generalized and can be generalized to many language models not 
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_nmt_attention.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ArabicEnglishTranslation/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
    <tr>
@@ -71,7 +53,7 @@ Our procedure is generalized and can be generalized to many language models not 
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Poem_Generation.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ArabicPoemGenerator/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
   <tr>
@@ -80,7 +62,7 @@ Our procedure is generalized and can be generalized to many language models not 
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Words_Embedding.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ArabicWordSimilarity/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
   <tr>
@@ -89,7 +71,7 @@ Our procedure is generalized and can be generalized to many language models not 
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Sentiment_Classification.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ArabicSentimentClassification/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
   <tr>
@@ -98,7 +80,7 @@ Our procedure is generalized and can be generalized to many language models not 
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Image_Captioning.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ArabicImageCaptioning/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
   <tr>
@@ -107,7 +89,16 @@ Our procedure is generalized and can be generalized to many language models not 
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Word_Similarity.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
-    <td><a href = "#"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ArabicWordSimilarity/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+  </tr>
+
+   <tr>
+    <td class="tg-yw4l">Arabic Characters Classification</td>
+    <td class="tg-yw4l">Basic RNN model with classification head</td>
+    <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Digits_Classification.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg"height = '20px' >
+    </a></td>
+    <td>Soon</td>
   </tr>
 </table>
   
