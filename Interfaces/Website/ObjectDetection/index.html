@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>المحدد</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+  </head>
+  <body>
+    <div class="container" id="maincontainer">
+      <div class="av-container">
+        <div id="avatar"> المُحدِّد</div>
+        <!-- <img
+          src="./avatar-cropped.png"
+          alt="cannot find the image"
+          id="avatar"
+        /> -->
+      </div>
+      <div class="info text-right">
+        <h3>:الفكرة</h3>
+        <p>
+          يقوم هذا النموذج بالتعرف على الأشياء الموجودة في الصور من خلال كتابة نوعها ووضع مستطيل حولها. 
+        </p>
+      </div>
+      <div id="loader">
+        <div class="lds-grid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        الرجاء الانتظار لتهيئة النموذج
+      </div>
+      <div class="inputs text-center collapse" id = "inputs">
+          <canvas id = "canvas" width = "512px", height = "512px"></canvas>
+          <!-- <img id = "img" width = "512px" height = "512px" src = "images/girrafe.jpg"/> -->
+          <br>
+          <input type="file" class = "btn btn-dark btn-sm preview collapse" id = "preview">
+
+          <button class="btn btn-dark btn-sm submit">! حدد </button>
+
+          <button class="btn btn-dark btn-sm upload">ارفع صورة من جهازك</button>
+
+          
+
+      </div>
+      <!-- <div class="outputs text-center collapse" id = "outputs">
+        <textarea
+          readonly
+          placeholder="نتيجة الوصف هنا"
+          dir="rtl"
+          class="output-text"
+        ></textarea>
+      </div> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

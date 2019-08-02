@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>السامِع</title>
+
+
+<!-- inserting these scripts at the end to be able to use all the elements in the DOM --> 
+<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  </head>
+  <body>
+    <div class="container" id="maincontainer">
+      <div class="av-container">
+        <div id="avatar"> السّامِع </div>
+        <!-- <img
+          src="./avatar-cropped.png"
+          alt="cannot find the image"
+          id="avatar"
+        /> -->
+      </div>
+      <div class="info text-right">
+        <h3>:الفكرة</h3>
+        <p>
+          قم بتسجيل ثانية من صوتك وانت تنطق رقم من واحد إلى تسعة ،  
+       سيتم عرض الثلاثة الأرقام المتوقعة من النموذج 
+        </p>
+      </div>
+      <div id="loader">
+        <div class="lds-grid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        الرجاء الانتظار لتهيئة النموذج
+      </div>
+      <div class="inputs text-center collapse" id = "inputs">
+
+          <div id="controls">
+            <!-- <button id="recordButton">تسجيل</button> -->
+            <button type = "button" id="recordButton" class="btn btn-dark btn-sm"> تسجيل</button>
+            <!-- <button id="stopButton" disabled>إيقاف</button> -->
+            <button type = "button" id="stopButton" disabled class="btn btn-dark btn-sm"> إيقاف</button>
+        </div>
+        <h3 id = "output"></h3>
+        <ol id="recordingsList"></ol>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
