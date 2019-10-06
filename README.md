@@ -93,12 +93,28 @@ Our procedure is generalized and can be generalized to many language models not 
   </tr>
 
    <tr>
-    <td class="tg-yw4l">Arabic Characters Classification</td>
+    <td class="tg-yw4l">Arabic Digits Classification</td>
     <td class="tg-yw4l">Basic RNN model with classification head</td>
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Digits_Classification.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg"height = '20px' >
     </a></td>
-    <td>Soon</td>
+    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ArabicDigitsClassification/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+  </tr>
+  
+  <tr>
+    <td class="tg-yw4l">Arabic Speech Recognition</td>
+    <td class="tg-yw4l">Basic signal processing and classification</td>
+    <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Speech_Recognition.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg"height = '20px' >
+    </a></td>
+    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ArabicSpeechRecognition/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+  </tr>
+  
+  <tr>
+    <td class="tg-yw4l">Arabic Object Detection</td>
+    <td class="tg-yw4l">SSD Object detection model</td>
+    <td class="tg-yw4l"></td>
+    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ObjectDetection/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></td>
   </tr>
 </table>
   
