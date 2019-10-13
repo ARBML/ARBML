@@ -89,7 +89,7 @@ Our procedure is generalized and can be generalized to many language models not 
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Word_Similarity.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
-    <td><a href = "https://zaidalyafeai.github.io/ARBML/Interfaces/Website/ArabicWordSimilarity/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+    <td></td>
   </tr>
 
    <tr>
