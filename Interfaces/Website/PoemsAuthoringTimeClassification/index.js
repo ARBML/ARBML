@@ -13,7 +13,7 @@ $(document).ready(function() {
     $("#base-loader").hide();
     // get words indexes
     console.log("fetching words indexes:");
-    wordsIndexJsonFile = "word_index.json";
+    wordsIndexJsonFile = "/ARBML/Interfaces/Website/PoemsAuthoringTimeClassification/word_index.json";
     word2index = await (await fetch(wordsIndexJsonFile)).text();
     word2index = JSON.parse(word2index);
     console.log(word2index);
