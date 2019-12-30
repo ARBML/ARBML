@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>كاشف أزمنة الشعر العربي</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+
+<body>
+    <div class="container" id="maincontainer">
+        <div class="av-container">
+            <div id="avatar">كاشف أزمنة الشعر العربي</div>
+            <!-- <img
+          src="./avatar-cropped.png"
+          alt="cannot find the image"
+          id="avatar"
+        /> -->
+        </div>
+        <div class="info text-right">
+            <h3>:الفكرة</h3>
+            <p>
+                .نموذج أنشئ باستخدام شبكات التعلم العميق للتنبؤ بزمن النص الشعري العربي
+            </p>
+        </div>
+        <div id="base-loader">
+            <div class="lds-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            الرجاء الانتظار لتهيئة النموذج
+            <br>
+            <b style="font-size: 15px; color:red"> تحذير : هذا النموذج يمكن أن يبطيء الجهاز </b>
+        </div>
+        <div class="inputs text-right collapse">
+            <h3>: أدخل فقط ثلاثة أبيات من القصيدة</h3>
+            <div class="input-baits">
+                <div class="row">
+                    <div class="col-md">
+                        <input type="text" class="shatr" placeholder="اكتب الشطر هنا" dir="rtl"
+                            value="وقف الشباب إلى الشباب و كلّهم">
+                    </div>
+                    <div class="col-md">
+                        <input type="text" class="shatr" placeholder="اكتب الشطر هنا" dir="rtl"
+                            value="ثقة وفخر بالبطولة مفعم">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <input type="text" class="shatr" placeholder="اكتب الشطر هنا" dir="rtl"
+                            value="في مهرجان العلم رفّ شبابه">
+                    </div>
+                    <div class="col-md">
+                        <input type="text" class="shatr" placeholder="اكتب الشطر هنا" dir="rtl"
+                            value="كالزهر يهمس بالشذى و يتمتم">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <input type="text" class="shatr" placeholder="اكتب الشطر هنا" dir="rtl"
+                            value="و تألّق المتعلّمون ... كأنّهم">
+                    </div>
+                    <div class="col-md">
+                        <input type="text" class="shatr" placeholder="اكتب الشطر هنا" dir="rtl"
+                            value="فيه الأشعّة و السما و الأنجم">
+                    </div>
+                </div>
+            </div>
+            <!-- <textarea placeholder="اكتب هنا" dir="rtl"></textarea> -->
+
+            <button class="btn btn-dark btn-sm submit">!تنبأ بزمن القصيدة</button>
+        </div>
+        <div id="before-output-loader">
+            <div class="lds-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="outputs text-right">
+            <h3 dir="rtl"> بناءا على نموذجنا، فالقصيدة قيلت ـ أو نسقها يشابه ما قيل ـ في
+            </h3>
+            <h3 class="output-text" dir="rtl"></h3>
+            <!-- <textarea readonly placeholder="نتيجة التشكيل هنا" dir="rtl" class="output-text"></textarea> -->
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>
