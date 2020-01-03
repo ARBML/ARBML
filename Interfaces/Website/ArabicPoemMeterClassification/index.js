@@ -24,6 +24,7 @@ $(document).ready(function() {
   * start the models and warm up 
   */
   
+  
   async function start()
   {
       // load the dictionaries
@@ -62,6 +63,20 @@ $(document).ready(function() {
   }
   
   /*
+  * clearn arabic text
+  */
+
+  function clean(text) {
+    preprocessed_text = text;
+    preprocessed_text = strip_harakat(preprocessed_text);
+    preprocessed_text = strip_tatweel(preprocessed_text);
+    preprocessed_text = normalize_hamza(preprocessed_text);
+    preprocessed_text = normalize_ligature(preprocessed_text);
+    preprocessed_text = execlude_special_chars(preprocessed_text);
+    return preprocessed_text;
+  }
+
+  /*
   * create a sequence of integers using word2idx from a statement
   */
   
@@ -81,8 +96,9 @@ $(document).ready(function() {
   * given a statement in arabic translate to english
   */
   
-  async function classify(sentence)
+  async function classify(text)
   {
+      let sentence = clean(text)
       let sequence = create_sequences(sentence)
       var input = tf.tensor(sequence).asType("int32")
       input = tf.expandDims(input, 0)
