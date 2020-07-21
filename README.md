@@ -184,6 +184,13 @@ Our procedure is generalized and can be generalized to many language models not 
     <td class="tg-yw4l">Arabic Poem Meters </td>
     <td class="tg-yw4l">55,440 verses with their associated meters collected from  <a href = "https://www.aldiwan.net/">aldiwan</a></td>
   </tr>
+  
+  <tr>
+    <td class="tg-yw4l">Arabic Fonts </td>
+    <td class="tg-yw4l">516 100×100 images for two classes.</td>
+  </tr>
+  
+  
 </table>
 
 ## Tools 
