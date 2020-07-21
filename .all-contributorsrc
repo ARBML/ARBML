@@ -24,11 +24,22 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "mhmoodlan",
+      "name": "Mahmoud Aslan",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/10808358?v=4",
+      "profile": "http://mhmoodlan.github.io",
+      "contributions": [
+        "ideas",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "ARBML",
   "projectOwner": "zaidalyafeai",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }

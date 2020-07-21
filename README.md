@@ -248,9 +248,18 @@ As a start we will start on Github for hosting the website, models, datasets and
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://github.com/MagedSaeed"><img src="https://avatars2.githubusercontent.com/u/18549783?v=4" width="100px;" alt="MagedSaeed"/><br /><sub><b>MagedSaeed</b></sub></a><br /><a href="#design-MagedSaeed" title="Design">🎨</a> <a href="#ideas-MagedSaeed" title="Ideas, Planning, & Feedback">🤔</a> <a href="#platform-MagedSaeed" title="Packaging/porting to new platform">📦</a></td><td align="center"><a href="http://twitter.com/marchworks"><img src="https://avatars1.githubusercontent.com/u/40798653?v=4" width="100px;" alt="March Works"/><br /><sub><b>March Works</b></sub></a><br /><a href="#ideas-MarchWorks" title="Ideas, Planning, & Feedback">🤔</a></td></tr></table>
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/MagedSaeed"><img src="https://avatars2.githubusercontent.com/u/18549783?v=4" width="100px;" alt=""/><br /><sub><b>MagedSaeed</b></sub></a><br /><a href="#design-MagedSaeed" title="Design">🎨</a> <a href="#ideas-MagedSaeed" title="Ideas, Planning, & Feedback">🤔</a> <a href="#platform-MagedSaeed" title="Packaging/porting to new platform">📦</a></td>
+    <td align="center"><a href="http://twitter.com/marchworks"><img src="https://avatars1.githubusercontent.com/u/40798653?v=4" width="100px;" alt=""/><br /><sub><b>March Works</b></sub></a><br /><a href="#ideas-MarchWorks" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="http://mhmoodlan.github.io"><img src="https://avatars1.githubusercontent.com/u/10808358?v=4" width="100px;" alt=""/><br /><sub><b>Mahmoud Aslan</b></sub></a><br /><a href="#ideas-mhmoodlan" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/zaidalyafeai/ARBML/commits?author=mhmoodlan" title="Code">💻</a></td>
+  </tr>
+</table>
 
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
