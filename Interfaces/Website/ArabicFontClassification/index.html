@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>الخطَّاط</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+
+<body>
+    <div class="container" id="maincontainer">
+        <div class="av-container">
+            <div id="avatar"> الخطَّاط </div>
+        </div>
+        <div class="info text-right">
+            <h3>:الفكرة</h3>
+            <p dir="rtl">
+                يقوم هذا النموذج بالتعرف على الخطوط العربية، تحديداً خطي النستعليق (الفارسي) والرقعة.
+                <br>فيما يلي تجربة حية للنموذج باستخدام Tensorflow.js. لاختبار النموذج، يمكنك: 1) توليد الصور مباشرة، 2)
+                رفع صورة، أو 3) الاختبار على عينات من الصور.
+                <br>
+                ملاحظة: ليعمل النموذج، يلزم تنزيل 1.99 ميغابايت من البيانات.
+            </p>
+        </div>
+        <div id="demo-container" dir="rtl">
+
+            <div id="fig0" class="svg-container">
+                <div id="canvas-container">
+                    <div class="tooltip-text">معاينة</div>
+                    <canvas id="canvas" width="100" height="100">متصفحك لا يدعم هذا العنصر</canvas>
+                    <div id="prediction">
+                        <div class="tooltip-text">التوقع</div>
+                        <div class="prediction-container-wrapper">
+                            <div class="prediction-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-atom-2"
+                                    width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                    <line x1="12" y1="21" x2="12" y2="21.01" />
+                                    <line x1="3" y1="9" x2="3" y2="9.01" />
+                                    <line x1="21" y1="9" x2="21" y2="9.01" />
+                                    <path d="M8 20.1a9 9 0 0 1 -5 -7.1" />
+                                    <path d="M16 20.1a9 9 0 0 0 5 -7.1" />
+                                    <path d="M6.2 5a9 9 0 0 1 11.4 0" />
+                                </svg>
+                            </div>
+                            <div id="prediction-container">-</div>
+                        </div>
+                        <div id="loading-model-text"></div>
+                        <div id="loading-fonts-text">
+                            <div id='loading-fonts-msg'>تعذر تحميل الخطوط</div>
+                            <button id='retry-loading-fonts'>إعادة
+                                المحاولة</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-method" dir="rtl">
+                    <h6>1. توليد الصور</h6>
+                    ادخل النص المطلوب في مربع النص التالي، ثم اختياريًا، انقر فوق توليد لجعل الكتابة تبدو حقيقة. سيتم
+                    معاينة الصورة المولدة في الإطار على اليمين. انقر على الزر "توقع" عند الانتهاء.
+                    <br /><br />
+                    <div id="generate-form">
+                        <label for="input-text">النص:</label>
+                        <input dir="rtl" type="text" id="input-text" value="نص تجريبي" />
+                        <label for="font-select">نوع الخط:</label>
+                        <select name="font-select" id="font-select">
+                            <option value="ruqaa" selected>رقعة</option>
+                            <option value="farsi">نستعليق (فارسي)</option>
+                        </select>
+                        <button id="synthesize-btn">توليد</button>
+                    </div>
+                    <button id="predict-btn">توقع</button>
+                </div>
+                <br /><br />
+                <div class="test-method">
+                    <h6>2. رفع صورة</h6> حجم الصورة المتوقع 100×100 بكسل، سيتم تغيير حجم الصور الأكبر/الأصغر من ذلك بما
+                    يتناسب.
+                    <br /><br />
+                    <input type="file" id="upload-image" accept="image/jpeg" name="Upload Image" />
+                </div>
+                <br /><br />
+                <div class="test-method">
+                    <h6>3. الاختبار على عينات من الصور</h6> انقر على الصورة للتنبؤ. يشير النص أسفل كل صورة إلى نوع الخط
+                    المستخدم.
+                    <br /><br />
+                    <div id="sample-images-container">
+                        <div><img src="./imgs/sample-images/1.jpg" width="100" height="100">
+                            <p>نستعليق (فارسي)</p>
+                        </div>
+                        <div><img src="./imgs/sample-images/8.jpg" width="100" height="100">
+                            <p>نستعليق (فارسي)</p>
+                        </div>
+                        <div><img src="./imgs/sample-images/3.jpg" width="100" height="100">
+                            <p>نستعليق (فارسي)</p>
+                        </div>
+                        <div><img src="./imgs/sample-images/7.jpg" width="100" height="100">
+                            <p>نستعليق (فارسي)</p>
+                        </div>
+                        <div><img src="./imgs/sample-images/4.jpg" width="100" height="100">
+                            <p>نستعليق (فارسي)</p>
+                        </div>
+                        <div><img src="./imgs/sample-images/6.jpg" width="100" height="100">
+                            <p>رقعة</p>
+                        </div>
+                        <div><img src="./imgs/sample-images/11.jpg" width="100" height="100">
+                            <p>رقعة</p>
+                        </div>
+                        <div><img src="./imgs/sample-images/9.jpg" width="100" height="100">
+                            <p>رقعة</p>
+                        </div>
+                        <div><img src="./imgs/sample-images/12.jpg" width="100" height="100">
+                            <p>رقعة</p>
+                        </div>
+                        <div><img src="./imgs/sample-images/5.jpg" width="100" height="100">
+                            <p>رقعة</p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div dir="rtl" style="text-align: right;">
+                للمزيد عن كيفية تطوير هذا النموذج يمكنكم قراءة <a
+                    href="https://mhmoodlan.github.io/blog/arabic-font-classification" target="_blank">المقال
+                    المرافق</a>.
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="fontobserver.min.js"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+---
+title: RuFa
+homepage: https://github.com/mhmoodlan/arabic-font-classification/releases/tag/v0.1.0
+category: ImageProcessing
+description: Contains images of text written in one of two Arabic fonts (Ruqaa and Nastaliq (Farsi)). The dataset contains 40,000 synthesized image and 516 real one, 40,516 in total. Images are in RGB JPG format at 100×100px.
+version: 1.0
+keywords: arabic-fonts, domain-adaptation, synthetic
+spatial: 100*100
+access_level: public
+language: ar
+publisher:
+  - name: Mahmoud Aslan
+    web: https://mhmoodlan.github.io
+issued_time: 2020.07
+sources:
+  - name: “The Rules of Arabic Calligraphy” by Hashem Al-Khatat - 1986
+  - name: “Ottman Fonts” by Muhammad Amin Osmanli Ketbkhana
