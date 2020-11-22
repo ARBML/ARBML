@@ -279,3 +279,20 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## Citation 
+
+```
+@inproceedings{alyafeai-al-shaibani-2020-arbml,
+    title = "{ARBML}: Democritizing {A}rabic Natural Language Processing Tools",
+    author = "Alyafeai, Zaid  and
+      Al-Shaibani, Maged",
+    booktitle = "Proceedings of Second Workshop for NLP Open Source Software (NLP-OSS)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.nlposs-1.2",
+    pages = "8--13",
+}
+```
