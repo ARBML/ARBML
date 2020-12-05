@@ -213,7 +213,7 @@ TensorFlow.js is part of the TensorFlow ecosystem that supports training and inf
 Check this [tutorial](https://medium.com/tensorflow/train-on-google-colab-and-run-on-the-browser-a-case-study-8a45f9b1474e) that I made for the complete procedure. 
 
 ## Website 
-We developed many models to run directly in the browser. Using TensorFlow.js the models run using the client GPU. Since the webpage is static there is no risk of privacy or security. You can visit the website [here](https://zaidalyafeai.github.io/ARBML/Interfaces/Website/) . Here is the main intefrace of the website 
+We developed many models to run directly in the browser. Using TensorFlow.js the models run using the client GPU. Since the webpage is static there is no risk of privacy or security. You can visit the website [here](https://arbml.github.io/ARBML/Interfaces/Website/) . Here is the main intefrace of the website 
 
 <p align="center"> 
  <img src = "https://raw.githubusercontent.com/zaidalyafeai/ARBML/master/Interfaces/Website/images/web_interface.png"/>
