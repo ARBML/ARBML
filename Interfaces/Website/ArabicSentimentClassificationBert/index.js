@@ -297,7 +297,7 @@ $(document).ready(function() {
             if (logits[1] > logits[0])
                 output = "إيجابي بنسبة %" + Math.round(logits[1] * 100)
             else
-                output = "سلبي بنسبة %" + (100 -Math.round(logits * 100))
+                output = "سلبي بنسبة %" + (100 -Math.round(logits[0] * 100))
             //show output 
             $("#output").val(output);
         }
