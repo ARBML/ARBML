@@ -93,7 +93,8 @@ $(document).ready(function() {
       async load() {
         this.vocab = (await Promise.all([tf.util.fetch(VOCAB_URL).then(d => d.json())]))[0];
         this.trie = new Trie();
-        for (let vocabIndex = 0; vocabIndex < Object.keys(this.vocab).length; vocabIndex++) {
+        vocab_length = Object.keys(this.vocab).length
+        for (let vocabIndex = 0; vocabIndex < vocab_length; vocabIndex++) {
           const word = this.vocab[vocabIndex];
           this.trie.insert(word, 1, vocabIndex);
         }
