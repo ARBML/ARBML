@@ -246,11 +246,12 @@ $(document).ready(function() {
           const inputIds = tf.ones([1, MAX_SEQ_LEN], 'int32');
           const segmentIds = tf.ones([1, MAX_SEQ_LEN], 'int32');
           const inputMask = tf.ones([1, MAX_SEQ_LEN], 'int32');
-          this.model.execute({
+          const result = this.model.execute({
             input_ids: inputIds,
             segment_ids: segmentIds,
             input_mask: inputMask,
           });
+          await Promise.all([result.array()]);
           console.log('warming up finished')
       }
     
