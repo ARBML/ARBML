@@ -93,7 +93,6 @@ $(document).ready(function() {
       async load() {
         this.vocab = (await Promise.all([tf.util.fetch(VOCAB_URL).then(d => d.json())]))[0];
         this.trie = new Trie();
-        console.log(this.vocab)
         for (let vocabIndex = 0; vocabIndex < Object.keys(this.vocab).length; vocabIndex++) {
           const word = this.vocab[vocabIndex];
           this.trie.insert(word, 1, vocabIndex);
@@ -180,13 +179,11 @@ $(document).ready(function() {
         let outputTokens = [];
     
         const words = this.processInput(text);
-        console.log(words)
         words.forEach(word => {
           if (word.text !== CLS_TOKEN && word.text !== SEP_TOKEN) {
             word.text = `${SEPERATOR}${word.text.normalize(NFKC_TOKEN)}`;
           }
         });
-        console.log(words)
         for (let i = 0; i < words.length; i++) {
           const chars = [];
           for (const symbol of words[i].text) {
