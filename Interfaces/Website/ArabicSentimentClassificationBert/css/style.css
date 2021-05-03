@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+
+.header-banner {
+  padding-top: 1%;
+  padding-bottom: 5%;
+  color: #ffffff;
+  font-family: Helvetica, serif;
+  font-weight: 100%;
+  /* background-image: url("//grapesjs.com/img/bg-gr-v.png"),
+    url("Arabic-Calligraphy-School-Cropped.png"); */
+  background: linear-gradient(rgba(236, 166, 225, 0.9), rgba(41, 37, 39)),
+    url("Arabic-Calligraphy-School-Cropped.png");
+  background-attachment: scroll, scroll;
+  background-position: left top, center center;
+  background-repeat: repeat-y, no-repeat;
+  background-size: contain, cover;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  max-height: 250px;
+  margin-bottom: 50px;
+}
+
+#header-text {
+  padding: 10px 10px 10px 10px;
+  font-family: "Amiri", serif;
+  float: none;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  font-size: 75px;
+  font-weight: 500;
+  top: 0;
+  display: block;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.flex-sect {
+  background-color: #fafafa;
+  padding: 100px 0;
+  font-family: Helvetica, serif;
+}
+.container-width {
+  width: 90%;
+  margin: auto;
+  font-family: "Amiri", serif;
+}
+/* .sections {
+  max-height: 250px;
+  border: 3px solid lightgray;
+} */
+.subject-wrapper {
+  margin: 2%;
+ 
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  grid-template-rows: auto;
+  justify-content: space-between;
+  direction: rtl;
+  background: white;
+  overflow: auto;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  height: 550px !important;
+  padding-bottom: 10px !important;
+  padding: 2%;
+}
+.subject-title .fa {
+  float: left;
+  font-size: 0.7em;
+  color: lightseagreen;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f139";
+}
+
+[data-toggle="collapse"] .fa:before {
+  content: "\f13a";
+}
+
+.subject-title {
+  text-align: right;
+  background: #fafafa;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 1%;
+}
+
+.subject-title h1 {
+  font-size: 1.7em;
+}
+
+.collapsables {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  margin: 2px auto;
+  width: 100%;
+  height: 500px;
+  direction: rtl;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  font-weight: 100;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+.card:hover {
+  /* margin-top: -1px; */
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 1%;
+}
+
+.card-props {
+  height: 130px !important;
+  overflow: auto;
+  text-align: right;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+}
+
+/* width */
+.card-props::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.card-props::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.card-props::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.card-props::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.card-buttons > * {
+  width: 100%;
+  margin: 3px auto;
+  font-size: 18px;
+}
+.card-buttons a .fa {
+  float: left;
+  margin-top: 3px;
+}
+
+.colab {
+  color: black;
+}
+
+.card-footer {
+  font-size: 0.75em;
+}
+@media screen and (min-width: 400px) {
+  #header-text {
+    font-size: 2.5rem !important;
+  }
+  .cards {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 85%);
+    justify-items: center;
+    justify-content: space-evenly;
+    direction: rtl !important;
+    background: white;
+    overflow: auto;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    height: 900px;
+    padding: 1%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header-text {
+    font-size: 3rem !important;
+  }
+  .cards {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 48%);
+    justify-items: center;
+    justify-content: space-evenly;
+    direction: rtl !important;
+    background: white;
+    overflow: auto;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    height: 900px;
+    padding: 1%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #header-text {
+    font-size: 3.5rem !important;
+  }
+  .cards {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 31%);
+    justify-items: center;
+    justify-content: space-evenly;
+    direction: rtl !important;
+    background: white;
+    overflow: auto;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    height: 900px;
+    padding: 1%;
+  }
+}

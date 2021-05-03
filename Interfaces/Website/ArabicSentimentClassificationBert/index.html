@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>مصنّف السلعة</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+  </head>
+  <body>
+    <div class="container" id="maincontainer">
+      <div class="av-container">
+        <div id="avatar">تحليل المشاعر </div>r"
+        /> -->
+      </div>
+      <div class="info text-right">
+        <h3>:الفكرة</h3>
+        <p>
+         يقوم هذا النموذج بتحليل المشاعر لمستخدمي الغرف الفندقية بإستخدام نموذج مصغر من BERT
+        </p>
+      </div>
+      <div id="loader">
+        <div class="lds-grid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        الرجاء الانتظار لتهيئة النموذج
+      </div>
+      <div class="inputs text-right collapse">
+        <h3>:أدخل جملة معينة </h3>
+
+        <form class="form-inline" dir = "rtl">  
+            <input
+            type="text"
+            class="form-control form-control-sm text-right"
+            placeholder=" اكتب هنا جملة مثلا : كانت غرفة جميلة ومريحة للغاية"
+            id = "input"
+            />
+    
+          <button type = "button" class="btn btn-dark btn-sm submit text-right">صنـــف !</button>
+    
+            <input
+            readonly
+            type="text"
+            class="form-control form-control-sm text-right"
+            placeholder="النتيجة هنا"
+            id = "output"
+          />
+      </div>
+      
+     
+      </form>
+
+    
+      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
