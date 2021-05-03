@@ -288,15 +288,15 @@ $(document).ready(function() {
                 tf.tensor2d(inputMask, [batchSize, MAX_SEQ_LEN], 'int32');
 
             const result = this.model.execute({
-            input_ids: inputIds,
-            segment_ids: segmentIds,
-            input_mask: inputMask
+                input_ids: inputIds,
+                segment_ids: segmentIds,
+                input_mask: inputMask
             });
-            const output = await Promise.all([result.array()]);
-            const logits = output[0][0]
+            let logits = await Promise.all([result.array()]);
+            logits = logits[0][0]
             
             // return the output
-            output = ""
+            let output = ""
             if (logits[1] > logits[0])
                 output = "إيجابي بنسبة %" + Math.round(logits[1] * 100)
             else
