@@ -68,7 +68,7 @@
   </tr>
 
    <tr>
-    <td class="tg-yw4l">إنشاء الشعر العربي</td>
+    <td class="tg-yw4l">مولد الشعر العربي</td>
     <td class="tg-yw4l">CharRNN model with multinomial distribution</td>
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Poem_Generation.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
@@ -91,7 +91,7 @@
     <td class="tg-yw4l"><a href="https://colab.research.google.com/github/zaidalyafeai/ARBML/blob/master/Interfaces/Notebooks/Arabic_Sentiment_Classification.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" height = '20px' >
     </a></td>
-    <td><a href = "https://arbml.github.io/ARBML/Interfaces/Website/ArabicWordSimilarity/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
+    <td><a href = "https://arbml.github.io/ARBML/Interfaces/Website/ArabicSentimentClassification/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></a></td>
   </tr>
 
   <tr>
