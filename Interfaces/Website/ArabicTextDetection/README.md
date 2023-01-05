@@ -1,0 +1,1 @@
+# Arabic Text Detection (OCR)
