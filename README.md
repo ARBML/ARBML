@@ -134,6 +134,13 @@ Our procedure is generalized and can be generalized to many language models not 
     </a></td>
     <td><a href = "https://arbml.github.io/ARBML/Interfaces/Website/ArabicFontClassification/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></td>
   </tr>
+
+  <tr>
+    <td class="tg-yw4l">Arabic Text Detection</td>
+    <td class="tg-yw4l">Optical Character Recognition (OCR)</td>
+    <td class="tg-yw4l"></td>
+    <td><a href = "https://arbml.github.io/ARBML/Interfaces/Website/ArabicTextDetection/index.html"><img src ="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" height = '20px'/></td>
+  </tr>
 </table>
   
 ## Datasets 
