@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Amiri&display=swap");
 
+canvas {
+  max-width: 100%;
+  object-fit: contain;
+}
 #maincontainer::before {
   background-image: url("arabic-letters-full.png");
   background-size: cover;
